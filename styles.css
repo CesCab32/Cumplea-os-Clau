@@ -1,0 +1,556 @@
+body#cielo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Color del cielo negro */
+    position: relative;
+    overflow: hidden;
+}
+
+.estrella {
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+    animation: twinkle 2.5s infinite; /* Animación de parpadeo */
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.estrella:nth-child(1) {
+    top: 10%;
+    left: 20%;
+}
+
+.estrella:nth-child(2) {
+    top: 30%;
+    left: 70%;
+}
+
+.estrella:nth-child(3) {
+    top: 50%;
+    left: 40%;
+}
+
+.estrella:nth-child(4) {
+    top: 70%;
+    left: 90%;
+}
+
+.estrella:nth-child(5) {
+    top: 90%;
+    left: 10%;
+}
+
+.estrella:nth-child(6) {
+    top: 15%;
+    left: 60%;
+}
+
+.estrella:nth-child(7) {
+    top: 45%;
+    left: 20%;
+}
+
+.estrella:nth-child(8) {
+    top: 75%;
+    left: 50%;
+}
+
+.estrella:nth-child(9) {
+    top: 5%;
+    left: 90%;
+}
+
+.estrella:nth-child(10) {
+    top: 35%;
+    left: 30%;
+}
+
+.estrella:nth-child(11) {
+    top: 65%;
+    left: 80%;
+}
+
+.estrella:nth-child(12) {
+    top: 25%;
+    left: 10%;
+}
+
+.estrella:nth-child(13) {
+    top: 55%;
+    left: 65%;
+}
+
+.estrella:nth-child(14) {
+    top: 85%;
+    left: 15%;
+}
+
+.estrella:nth-child(15) {
+    top: 40%;
+    left: 85%;
+}
+
+.estrella:nth-child(16) {
+    top: 80%;
+    left: 30%;
+}
+
+.estrella:nth-child(17) {
+    top: 20%;
+    left: 75%;
+}
+
+.estrella:nth-child(18) {
+    top: 50%;
+    left: 5%;
+}
+.sunflower-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.sunflower {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 50px solid transparent;
+    border-bottom-color: #FFD700; /* Color del girasol */
+    border-radius: 50%;
+    animation: bloom 4s linear infinite;
+}
+
+.petal {
+    position: absolute;
+    width: 20px;
+    height: 60px;
+    background-color: #FFD700; /* Color de los pétalos */
+    border-radius: 10px;
+}
+
+.petal:nth-child(odd) {
+    transform: rotate(45deg);
+}
+
+@keyframes bloom {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.petal:nth-child(1) { transform: rotate(0deg) translate(50px); }
+.petal:nth-child(2) { transform: rotate(45deg) translate(50px); }
+.petal:nth-child(3) { transform: rotate(90deg) translate(50px); }
+.petal:nth-child(4) { transform: rotate(135deg) translate(50px); }
+.petal:nth-child(5) { transform: rotate(180deg) translate(50px); }
+.petal:nth-child(6) { transform: rotate(225deg) translate(50px); }
+.petal:nth-child(7) { transform: rotate(270deg) translate(50px); }
+.petal:nth-child(8) { transform: rotate(315deg) translate(50px); }
+
+h1
+{
+	color: #ff0a54;
+	text-align: center;
+}
+
+div.petalo {
+    background: conic-gradient(from 90deg, #ffd700, #ffcc00); /* Gradiente de color */
+    width: 50px;
+    height: 120px;
+    position: absolute;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform-origin: 50% 100%;
+    margin-top: -45px;
+    margin-left: 85px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+    border: 2px solid #000; /* Borde negro */
+}
+
+#centro {
+    background-color: #a27e05;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+
+
+
+
+
+
+
+
+#tallo1 {
+    width: 20px;
+    height: 350px;
+    background-color: #006c67;
+    position: fixed;
+    bottom: 0;
+    left: 25%;
+    z-index: 0; /* Ajusta el índice Z para que el tallo esté detrás de la flor */
+    animation: ondaCesped 2.8s ease-in-out infinite;
+}
+#tallo2 {
+    width: 20px;
+    height: 350px;
+    background-color: #006c67;
+    position: fixed;
+    bottom: 0;
+    left: 75%;
+    z-index: 0; /* Ajusta el índice Z para que el tallo esté detrás de la flor */
+    animation: ondaCesped 2.8s ease-in-out infinite;
+}
+#hoja
+{
+	background-color: #006c67;
+	border-radius: 15px 0px 15px 0px;
+	width: 30px;
+	height: 30px;
+	margin-left: 160px;
+	margin-top: -90px;
+	position: absolute;
+}
+
+#flor
+{
+	width: 300px;
+	height: 300px;
+	background-color: transparent;
+	position: relative;
+    animation: balanceo 2s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes balanceo {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg); /* Ajusta el ángulo de balanceo según tus preferencias */
+    }
+}
+#p1
+{
+	top:70px;
+	left:40px;
+}
+#p2
+{
+	top:40px;
+	left:110px;
+}
+#p3
+{
+	top:70px;
+	left:180px;
+}
+#p4
+{
+	top:145px;
+	left:44px;
+}
+#p5
+{
+	top:180px;
+	left:114px;
+}
+#p6
+{
+	top:140px;
+	left:180px;
+}
+#figura{
+	position: relative;
+	background-color: transparent;
+	top:0px ;
+	left: 0px;
+	width: 300px;
+	margin: auto;
+}
+#cesped {
+    position: fixed;
+    width: 16000px;
+    bottom: 0;
+    left: 0;
+    transform: translateX(50%);
+    animation: ondaCesped 3s ease-in-out infinite;
+    z-index: 1;
+}
+
+@keyframes ondaCesped {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Ajusta la altura de la onda según tus preferencias */
+    }
+}
+
+.manga {
+    background: #80ed99;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+.fondo_manga {
+    background: #80ed99;
+    height: 50px;
+    left: -10px;
+    position: absolute;
+    top: 26px;
+    width: 1550px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+
+#postit{
+  position:fixed;
+  background:#e9ff70;
+  width:200px;
+  height:200px;
+  margin:20px;
+  right:10px;
+  padding:20px;
+}
+
+#hoja1, #hoja2, #hoja3 {
+    background-color: #006c67;
+    border-radius: 15px 0px 15px 0px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+#hoja1 {
+    top: 100px;
+    left: 15px;
+}
+
+#hoja2 {
+    top: 175px;
+    left: 15px;
+}
+
+#hoja3 {
+    top: 150px;
+    left: -25px;
+}
+
+
+canvas {
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0; /* Asegura que el canvas esté sobre otros elementos */
+  }
+  
+
+span {
+    font-size: 11px;
+}
+
+p > a:first-of-type {
+    font-size: 20px;
+}
+
+
+
+@keyframes moverNube {
+    from {
+        left: -100px;
+    }
+    to {
+        left: 100vw;
+    }
+}
+#nube {
+    position: absolute;
+    width: 150px; /* Ajusta el tamaño total de la nube */
+    height: 60px; /* Ajusta el tamaño total de la nube */
+    top: 100px; /* Ajusta la posición vertical de la nube */
+    left: 100px; /* Ajusta la posición horizontal de la nube */
+    animation: moverNube 35s;
+}
+
+/* Círculos que forman la nube */
+.nube-circulo {
+    position: absolute;
+    background-color: #4b4949; /* Color de la nube */
+    width: 30px; /* Ajusta el tamaño de cada círculo */
+    height: 30px; /* Ajusta el tamaño de cada círculo */
+    border-radius: 50%;
+}
+
+.nube-circulo:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.nube-circulo:nth-child(2) {
+    top: 0;
+    left: 10px;
+}
+
+.nube-circulo:nth-child(3) {
+    top: 0;
+    left: 25px;
+}
+
+.nube-circulo:nth-child(4) {
+    top: 10px;
+    left: 15px;
+}
+
+.nube-circulo:nth-child(5) {
+    top: 10px;
+    left: 25px;
+}
+.nube-circulo:nth-child(6) {
+    top: -10;
+    left: 0;
+}
+
+.nube-circulo:nth-child(7) {
+    top: 30;
+    left: 0px;
+}
+
+.nube-circulo:nth-child(8) {
+    top: 0;
+    left: 40px;
+}
+
+.nube-circulo:nth-child(9) {
+    top: 20px;
+    left: 15px;
+}
+
+.nube-circulo:nth-child(10) {
+    top: 20px;
+    left: 45px;
+}
+
+#luna {
+    position: absolute;
+    background-color: #f4f4f4;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* Agregamos un halo de luz */
+
+    /* Círculos representando cráteres */
+    overflow: hidden;
+}
+
+#luna::before {
+    content: "";
+    position: absolute;
+    background-color: #888; /* Color de los cráteres */
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+
+#luna::after {
+    content: "";
+    position: absolute;
+    background-color: #888; /* Color de los cráteres */
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50px;
+    left: 60px;
+}
+
+
+
+
+
+/*#camion {
+    width: 100px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    bottom: 0;
+    animation: miAnimacion 15s infinite;
+    box-shadow: 10 10 10px black;
+    z-index: 3;
+}
+
+#cabina {
+    width: 35px;
+    height: 35px;
+    background-color: blue;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#estribo {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+
+#capo {
+    width: 150px;
+    height: 55px;
+    background-color: red;
+    position: absolute;
+    bottom: -45px;
+    right: 10;
+}
+
+#remolque {
+    width: 55px;
+    height: 15px;
+    background-color: grey;
+    position: absolute;
+    left: -55px;
+    top: 80px;
+}
+
+@keyframes miAnimacion {
+    0% {left: 0px;}
+    100% {left: 100%;}
+}*/
